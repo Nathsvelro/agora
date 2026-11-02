@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="description" content="Política de privacidad de ÁGORA: sin cuentas, sin analítica y sin datos recogidos por el desarrollador. El progreso se guarda en tu dispositivo y en tu iCloud.">
+<title>Privacidad · ÁGORA</title>
+<style>
+  :root {
+    --bg: #f8f4ea;
+    --surface: #fffdf8;
+    --ink: #1b2433;
+    --muted: #5a6474;
+    --line: #d9cfba;
+    --gold: #b8892c;
+    --gold-soft: #e7c878;
+    --link: #1c3354;
+    --link-hover: #107370;
+    --band: #0d1b2e;
+    --on-band: #e8eef7;
+    --on-band-muted: #a9b8cc;
+    --code-bg: rgba(184, 137, 44, 0.14);
+    --focus: #3cc6c0;
+    --serif: 'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif;
+    --sans: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    color-scheme: light dark;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #060d19;
+      --surface: #12213a;
+      --ink: #e6ecf5;
+      --muted: #9fb0c6;
+      --line: #2a3f60;
+      --gold: #e2b85a;
+      --link: #e7c878;
+      --link-hover: #4fcfc7;
+      --code-bg: rgba(226, 184, 90, 0.16);
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 1.0625rem/1.6 var(--sans);
+    overflow-wrap: break-word;
+  }
+  .wrap { max-width: 42rem; margin: 0 auto; padding: 0 1rem; }
+  .band { background: var(--band); color: var(--on-band); border-bottom: 3px solid var(--gold); }
+  .band .wrap { padding-top: 1.5rem; padding-bottom: 1.5rem; }
+  .brand { display: flex; align-items: center; gap: 0.6rem; margin: 0 0 0.75rem; color: var(--on-band-muted); font-size: 0.85rem; letter-spacing: 0.08em; text-transform: uppercase; }
+  .brand svg { width: 2.25rem; height: 2.25rem; flex: none; }
+  h1, h2 { font-family: var(--serif); font-weight: 700; line-height: 1.2; }
+  h1 { font-size: clamp(1.6rem, 6vw, 2.15rem); margin: 0 0 0.4rem; }
+  .band p { margin: 0; color: var(--on-band-muted); }
+  h2 { font-size: 1.4rem; margin: 2.25rem 0 0.75rem; padding-top: 1.25rem; border-top: 1px solid var(--line); }
+  h3 { font-size: 1.05rem; margin: 1.5rem 0 0.4rem; }
+  p { margin: 0 0 0.9rem; }
+  ul { padding-left: 1.25rem; margin: 0 0 1rem; }
+  li + li { margin-top: 0.35rem; }
+  a { color: var(--link); text-decoration-color: var(--gold); text-underline-offset: 0.18em; }
+  a:hover { color: var(--link-hover); }
+  :focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; border-radius: 4px; }
+  code { font-family: var(--mono); font-size: 0.88em; background: var(--code-bg); padding: 0.05em 0.3em; border-radius: 4px; overflow-wrap: anywhere; }
+  .summary { background: var(--surface); border: 1px solid var(--line); border-left: 4px solid var(--gold); border-radius: 10px; padding: 1rem 1.1rem 0.4rem; margin: 1.75rem 0 0; }
+  .summary h2 { margin: 0 0 0.6rem; padding: 0; border: 0; font-size: 1.2rem; }
+  .note { color: var(--muted); font-size: 0.95rem; }
+  .intro { margin-top: 1.5rem; }
+  main { padding-bottom: 1rem; }
+  footer { border-top: 1px solid var(--line); color: var(--muted); font-size: 0.9rem; padding: 1.25rem 0 2.5rem; }
+  footer p { margin: 0 0 0.4rem; }
+  @media (max-width: 360px) { body { font-size: 1rem; } }
+</style>
+</head>
+<body>
+<header class="band">
+  <div class="wrap">
+    <p class="brand">
+      <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><circle cx="16" cy="16" r="14" fill="#0d1b2e" stroke="#c79a3b" stroke-width="2"/><path d="M11 10h10M12 10v12M16 10v12M20 10v12M10 22h12" stroke="#e7c878" stroke-width="2" fill="none"/></svg>
+      <span>ÁGORA · Atlas de filosofía</span>
+    </p>
+    <h1>Política de privacidad de ÁGORA</h1>
+    <p>Vigente desde el 2 de noviembre de 2026</p>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="summary" aria-labelledby="resumen">
+    <h2 id="resumen">En resumen</h2>
+    <ul>
+      <li>No hay cuentas ni registro.</li>
+      <li>La app no envía ningún dato al desarrollador ni a terceros: no tiene servidores, y el desarrollador no puede ver tu progreso.</li>
+      <li>No hay analítica remota, publicidad, rastreo ni SDK de terceros que recojan datos.</li>
+      <li>Tu progreso se guarda en tu dispositivo y, en la app para iPhone, iPad y Mac, también en tu propio iCloud si lo tienes activado, para que puedas seguir en tus otros dispositivos.</li>
+      <li>Puedes exportar tu progreso o borrarlo todo desde el Perfil de la app.</li>
+    </ul>
+  </section>
+
+  <p class="intro">ÁGORA es una app de microlecciones de filosofía para iPhone, iPad y Mac, con una versión web. La publica Nathaniel Velazquez («el desarrollador» en esta página). Esta política explica qué guarda la app, dónde lo guarda y cómo puedes borrarlo.</p>
+
+  <h2 id="recopilacion">1. Datos que recopila el desarrollador</h2>
+  <p>Ninguno a través de la app. ÁGORA no envía al desarrollador ni a terceros tu progreso, tus respuestas, tus preferencias ni ningún otro dato, y no tiene servidores propios a los que enviarlos. Lo único que puede llegarle por otras vías se explica en los apartados <a href="#apple">7</a> (lo que gestiona Apple) y <a href="#correo">8</a> (si le escribes). En concreto, la app:</p>
+  <ul>
+    <li>no pide crear una cuenta ni iniciar sesión;</li>
+    <li>no incluye analítica ni medición de uso que salga del dispositivo, ni publicidad ni herramientas de rastreo, y no sigue tu actividad en otras apps o sitios web (el registro de actividad que usa la propia app se describe en el apartado 2 y solo se guarda en tus dispositivos, en sus copias de seguridad y en tu iCloud);</li>
+    <li>no incorpora SDK de terceros que recojan datos: está construida con Capacitor, un marco de código abierto que funciona dentro del dispositivo;</li>
+    <li>no pide permisos de ubicación, cámara, micrófono, contactos, fotos ni notificaciones, y no envía notificaciones;</li>
+    <li>no tiene compras dentro de la app;</li>
+    <li>no guarda los textos que escribes en las reflexiones: las indicaciones sobre tu texto se calculan en el momento, en el dispositivo, y el texto no se almacena ni se envía.</li>
+  </ul>
+
+  <h2 id="que-guarda">2. Qué guarda la app y dónde</h2>
+  <p>Para que no pierdas lo aprendido, la app guarda tu progreso. Ese progreso se queda en tus dispositivos y, si usas iCloud, en tu cuenta de iCloud.</p>
+
+  <h3>Qué contiene tu progreso</h3>
+  <ul>
+    <li>Lecciones empezadas y completadas, con su versión, y los resultados de las actividades y los repasos.</li>
+    <li>XP, historial de recompensas, insignias, conexiones descubiertas y avance en las rutas.</li>
+    <li>Calendario de repasos y estimación del dominio de cada concepto, con la seguridad que declares al responder, si lo haces.</li>
+    <li>Lecciones guardadas.</li>
+    <li>Preferencias: idioma, intereses, experiencia, duración de la sesión, tema, movimiento, ritmo semanal, exclusiones, modo del feed y ruta activa, y semilla de exploración.</li>
+    <li>Señales de interés: los intereses que declaras y lo que la app deduce de tus elecciones («Me interesa», «Menos de esto», guardar, profundizar, completar) y de cómo recorres las tarjetas (por ejemplo, si pasas una muy rápido), junto con un recuento de lo que ya has visto. Sirven para ordenar el feed, y el Perfil muestra las principales.</li>
+    <li>Un registro de actividad con fecha y hora (tarjetas vistas, respuestas, guardados…) y los días en que usaste la app, que usan el repaso, el ritmo semanal y el recomendador.</li>
+    <li>La fecha en que se creó tu perfil y, si usas el reloj de demostración del Perfil, cuántos días lo adelantaste.</li>
+  </ul>
+  <p>No contiene tu nombre, tu correo, tu ubicación, tus contactos ni ningún identificador publicitario.</p>
+
+  <h3>En el dispositivo (app para iPhone, iPad y Mac)</h3>
+  <p>El progreso se guarda en la carpeta privada de la app en el dispositivo (<code>Application Support</code>), a la que otras apps no tienen acceso. Esa copia entra en las copias de seguridad del dispositivo (por ejemplo, la copia de seguridad de iCloud de tu iPhone o iPad). Además, la app guarda en el dispositivo:</p>
+  <ul>
+    <li>un identificador aleatorio de la instalación, creado por la propia app, que da nombre a su archivo en iCloud. No te identifica y no entra en las copias de seguridad del dispositivo; solo sale de él como parte de tu copia en iCloud (en el nombre del archivo y dentro de él);</li>
+    <li>un valor opaco que el sistema proporciona para la cuenta de iCloud activa, que la app usa solo para saber si cambiaste de Apple ID. Se guarda junto a tu progreso, así que entra en las copias de seguridad del dispositivo, pero no se incluye en tu copia de iCloud ni se envía a nadie.</li>
+  </ul>
+  <p>Si la copia del dispositivo no se pudiera leer, la app la guarda aparte, sin volver a usarla, para no perder lo que contenga; «Borrar todos los datos» también la borra.</p>
+  <p>Si en alguna sesión el almacenamiento de la app no responde, lo que hagas en ella se guarda en el almacenamiento interno del visor web de la propia app y se traslada a su sitio la próxima vez que la abras.</p>
+
+  <h3>En tu iCloud</h3>
+  <p>Si has iniciado sesión en iCloud con iCloud Drive activado, la app guarda una copia de tu progreso en el contenedor privado de ÁGORA en tu iCloud (<code>iCloud.com.nathsvelro.agora</code>). Así tu progreso se combina entre tus iPhone, iPad y Mac con el mismo Apple ID.</p>
+  <ul>
+    <li>Cada instalación escribe su propio archivo, con tu progreso, el identificador aleatorio de la instalación y los datos técnicos necesarios para combinar las copias (las fechas de los cambios y la del último borrado).</li>
+    <li>Estos archivos no aparecen en la app Archivos y no se comparten con nadie.</li>
+    <li>El desarrollador no tiene acceso a tu iCloud ni a estos archivos.</li>
+    <li>Apple los almacena y los transmite según sus propias condiciones: los <a href="https://www.apple.com/legal/internet-services/icloud/">términos y condiciones de iCloud</a> y la <a href="https://www.apple.com/legal/privacy/">política de privacidad de Apple</a>. Ocupan espacio de tu almacenamiento de iCloud.</li>
+    <li>Sin sesión de iCloud la app funciona igual, pero el progreso se queda solo en el dispositivo.</li>
+  </ul>
+
+  <h3>En la versión web</h3>
+  <p>Si usas ÁGORA en un navegador, el progreso se guarda en el almacenamiento local del navegador (<code>localStorage</code>), solo en ese navegador y en ese dispositivo. La versión web no usa iCloud ni sincroniza entre dispositivos, y el código de ÁGORA no crea cookies (sobre el sitio que la aloje, ver el apartado 3).</p>
+
+  <h2 id="red">3. Conexiones a internet</h2>
+  <p>La app para iPhone, iPad y Mac no hace peticiones de red propias: todo el contenido de las lecciones va dentro de la app, y puedes usarla sin conexión. Solo hay tráfico de red en estos casos:</p>
+  <ul>
+    <li><strong>iCloud.</strong> La sincronización la hace el sistema operativo con los servidores de Apple cuando hay conexión.</li>
+    <li><strong>Enlaces de las fuentes.</strong> Al tocar «Abrir enlace» en las fuentes de una lección se abre una página externa (por ejemplo, de una enciclopedia académica o una biblioteca digital). Ese sitio recibe la visita como cualquier otra y se rige por su propia política de privacidad.</li>
+    <li><strong>Versión web.</strong> El servidor que aloja la página recibe las peticiones normales de cualquier sitio web (por ejemplo, tu dirección IP) y las trata según sus propias condiciones. La versión web de archivo único carga además dos tipografías desde Google Fonts, así que tu navegador se conecta con servidores de Google para descargarlas; si no cargan, usa las del sistema. La app para iPhone, iPad y Mac usa solo tipografías del sistema.</li>
+  </ul>
+
+  <h2 id="apple-id">4. Si cambias de Apple ID</h2>
+  <p>La app recuerda a qué cuenta de iCloud pertenece el progreso del dispositivo. Si detecta otra cuenta (porque cambiaste de Apple ID o restauraste una copia de seguridad del dispositivo hecha con otro), aparta en el dispositivo el progreso de la cuenta anterior y no lo sube a la nueva. Lo que ya se había subido sigue en el iCloud de la cuenta anterior.</p>
+  <p>En el Perfil verás entonces «Progreso de otra cuenta de iCloud», con dos opciones:</p>
+  <ul>
+    <li>«Añadirlo a esta cuenta»: lo combina con el progreso de la cuenta actual, sin sus ajustes ni sus señales de interés. Después no se puede separar.</li>
+    <li>«Descartarlo»: lo borra de este dispositivo. No se puede deshacer.</li>
+  </ul>
+  <p>Ese progreso solo pasa a la cuenta nueva si eliges «Añadirlo a esta cuenta».</p>
+  <p class="note">Límite técnico: la app comprueba la cuenta justo antes de escribir en iCloud, pero ninguna función del sistema permite comprobarla y escribir en un solo paso. Si el Apple ID cambiara exactamente en el instante en que la app escribe su copia, esa copia podría quedar en el iCloud de la otra cuenta.</p>
+
+  <h2 id="control">5. Cómo ver, exportar y borrar tus datos</h2>
+  <p>Como el desarrollador no tiene tu progreso ni ningún otro dato de la app, no puede consultarlo, corregirlo ni borrarlo por ti: todo eso lo haces directamente en la app, en <strong>Perfil → Tus datos</strong>.</p>
+  <ul>
+    <li><strong>Ver.</strong> El Perfil muestra tu progreso, tus preferencias, tus señales de interés principales y el historial de recompensas. Para ver todo lo que guarda la app, incluido el registro de actividad, usa «Exportar progreso (JSON)».</li>
+    <li><strong>Exportar.</strong> «Exportar progreso (JSON)» muestra todo tu progreso en formato JSON para que lo copies y lo guardes donde quieras. En el navegador, además, se descarga como archivo si el navegador lo permite.</li>
+    <li><strong>Importar.</strong> «Importar progreso» (desde un archivo) o «Importar pegando el JSON». La app comprueba la versión y la estructura antes de aceptarlo. En la app con iCloud activo, lo importado sustituye la copia del dispositivo y después se combina con el progreso de tus otros dispositivos.</li>
+    <li><strong>Borrar todo.</strong> En la app, «Borrar todos los datos (también en iCloud y en tus otros dispositivos)» borra el progreso del dispositivo (también el apartado de otra cuenta) y los archivos de progreso de ÁGORA en tu iCloud, y el borrado llega a tus otros dispositivos con el mismo Apple ID cuando se sincronizan. Después queda en tu iCloud un archivo nuevo sin progreso, con la fecha del borrado, que sirve para que esos dispositivos lo apliquen. No se puede deshacer, y no afecta al iCloud de otro Apple ID. Hazlo con la copia en iCloud activa: si no lo está (por ejemplo, sin sesión de iCloud), se borra lo del dispositivo, el borrado llega a tus otros dispositivos cuando la app vuelve a sincronizar con el mismo Apple ID, y los archivos que esos dispositivos tenían en iCloud se vacían cuando cada uno se sincroniza. En la versión web, «Borrar todos los datos locales» borra lo guardado en ese navegador.</li>
+    <li><strong>Reiniciar preferencias.</strong> «Reiniciar preferencias» restablece los ajustes y las señales de interés y conserva tu progreso.</li>
+    <li><strong>Desinstalar.</strong> En iPhone y iPad, al eliminar la app el sistema borra sus datos del dispositivo; en el Mac, eliminar la app puede no borrarlos. En ningún caso se borra la copia de iCloud. Para borrarlo todo, usa antes «Borrar todos los datos».</li>
+  </ul>
+  <p class="note">Las copias de seguridad del dispositivo hechas antes de un borrado conservan la copia local que contenían.</p>
+
+  <h2 id="menores">6. Niñas, niños y adolescentes</h2>
+  <p>ÁGORA no está dirigida específicamente a menores y no recopila datos de nadie, tampoco de menores: no hay cuentas, chat, comunidad, publicidad ni compras dentro de la app. Las fuentes de las lecciones incluyen enlaces a sitios externos (por ejemplo, enciclopedias académicas, bibliotecas digitales, publicaciones académicas, sitios institucionales o medios de prensa), que solo se abren si se tocan.</p>
+
+  <h2 id="apple">7. Información que gestiona Apple</h2>
+  <p>Apple distribuye la app y presta el servicio de iCloud. Puede facilitar al desarrollador estadísticas agregadas de la App Store, como el número de descargas, e informes de fallos y datos de uso de quienes hayan aceptado compartirlos con desarrolladores en los ajustes de su dispositivo. Esa información la recoge y la trata Apple según su política de privacidad; ÁGORA no envía nada por su cuenta.</p>
+
+  <h2 id="correo">8. Si escribes al desarrollador</h2>
+  <p>Si escribes a <a href="mailto:atancaiser@gmail.com">atancaiser@gmail.com</a>, el desarrollador recibe tu dirección de correo y lo que incluyas en el mensaje, y solo los usa para responderte. No hace falta que envíes tu progreso para pedir ayuda.</p>
+
+  <h2 id="cambios">9. Cambios en esta política</h2>
+  <p>Cualquier cambio se publicará en esta página con una nueva fecha de vigencia. Si una versión futura de la app tratara tus datos de otra forma, se explicará aquí y en la información de privacidad de su ficha en la App Store.</p>
+
+  <h2 id="contacto">10. Contacto</h2>
+  <p>Para cualquier pregunta sobre esta política o sobre tus datos, escribe a <a href="mailto:atancaiser@gmail.com">atancaiser@gmail.com</a>. Para ayuda con la app, consulta <a href="https://nathsvelro.github.io/agora/soporte.html">Ayuda y soporte</a>.</p>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>ÁGORA · Nathaniel Velazquez</p>
+    <p>Política de privacidad vigente desde el 2 de noviembre de 2026.</p>
+  </div>
+</footer>
+</body>
+</html>

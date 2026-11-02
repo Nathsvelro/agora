@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="description" content="Ayuda y soporte de ÁGORA: requisitos, sincronización con iCloud, estados de la copia en iCloud, borrar, exportar e importar tu progreso, y contacto.">
+<title>Ayuda · ÁGORA</title>
+<style>
+  :root {
+    --bg: #f8f4ea;
+    --surface: #fffdf8;
+    --ink: #1b2433;
+    --muted: #5a6474;
+    --line: #d9cfba;
+    --gold: #b8892c;
+    --gold-soft: #e7c878;
+    --link: #1c3354;
+    --link-hover: #107370;
+    --band: #0d1b2e;
+    --on-band: #e8eef7;
+    --on-band-muted: #a9b8cc;
+    --code-bg: rgba(184, 137, 44, 0.14);
+    --focus: #3cc6c0;
+    --serif: 'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif;
+    --sans: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    color-scheme: light dark;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #060d19;
+      --surface: #12213a;
+      --ink: #e6ecf5;
+      --muted: #9fb0c6;
+      --line: #2a3f60;
+      --gold: #e2b85a;
+      --link: #e7c878;
+      --link-hover: #4fcfc7;
+      --code-bg: rgba(226, 184, 90, 0.16);
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 1.0625rem/1.6 var(--sans);
+    overflow-wrap: break-word;
+  }
+  .wrap { max-width: 42rem; margin: 0 auto; padding: 0 1rem; }
+  .band { background: var(--band); color: var(--on-band); border-bottom: 3px solid var(--gold); }
+  .band .wrap { padding-top: 1.5rem; padding-bottom: 1.5rem; }
+  .brand { display: flex; align-items: center; gap: 0.6rem; margin: 0 0 0.75rem; color: var(--on-band-muted); font-size: 0.85rem; letter-spacing: 0.08em; text-transform: uppercase; }
+  .brand svg { width: 2.25rem; height: 2.25rem; flex: none; }
+  h1, h2 { font-family: var(--serif); font-weight: 700; line-height: 1.2; }
+  h1 { font-size: clamp(1.6rem, 6vw, 2.15rem); margin: 0 0 0.4rem; }
+  .band p { margin: 0; color: var(--on-band-muted); }
+  .band a { color: var(--gold-soft); }
+  h2 { font-size: 1.4rem; margin: 2.25rem 0 0.75rem; padding-top: 1.25rem; border-top: 1px solid var(--line); }
+  h3 { font-size: 1.05rem; margin: 1.5rem 0 0.4rem; }
+  p { margin: 0 0 0.9rem; }
+  ul, ol { padding-left: 1.25rem; margin: 0 0 1rem; }
+  li + li { margin-top: 0.35rem; }
+  a { color: var(--link); text-decoration-color: var(--gold); text-underline-offset: 0.18em; }
+  a:hover { color: var(--link-hover); }
+  :focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; border-radius: 4px; }
+  code { font-family: var(--mono); font-size: 0.88em; background: var(--code-bg); padding: 0.05em 0.3em; border-radius: 4px; overflow-wrap: anywhere; }
+  .toc { background: var(--surface); border: 1px solid var(--line); border-left: 4px solid var(--gold); border-radius: 10px; padding: 1rem 1.1rem 0.5rem; margin: 1.75rem 0 0; }
+  .toc h2 { margin: 0 0 0.5rem; padding: 0; border: 0; font-size: 1.1rem; }
+  .toc ul { margin-bottom: 0.5rem; }
+  .states { margin: 0 0 1rem; }
+  .states dt { font-weight: 600; margin-top: 1rem; }
+  .states dd { margin: 0.3rem 0 0; padding-left: 0.9rem; border-left: 2px solid var(--line); color: var(--ink); }
+  .note { color: var(--muted); font-size: 0.95rem; }
+  main { padding-bottom: 1rem; }
+  footer { border-top: 1px solid var(--line); color: var(--muted); font-size: 0.9rem; padding: 1.25rem 0 2.5rem; }
+  footer p { margin: 0 0 0.4rem; }
+  @media (max-width: 360px) { body { font-size: 1rem; } }
+</style>
+</head>
+<body>
+<header class="band">
+  <div class="wrap">
+    <p class="brand">
+      <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><circle cx="16" cy="16" r="14" fill="#0d1b2e" stroke="#c79a3b" stroke-width="2"/><path d="M11 10h10M12 10v12M16 10v12M20 10v12M10 22h12" stroke="#e7c878" stroke-width="2" fill="none"/></svg>
+      <span>ÁGORA · Atlas de filosofía</span>
+    </p>
+    <h1>Ayuda y soporte</h1>
+    <p>Preguntas frecuentes sobre ÁGORA para iPhone, iPad y Mac. ¿No encuentras la respuesta? Escribe a <a href="mailto:atancaiser@gmail.com">atancaiser@gmail.com</a>.</p>
+  </div>
+</header>
+
+<main class="wrap">
+  <nav class="toc" aria-labelledby="indice">
+    <h2 id="indice">En esta página</h2>
+    <ul>
+      <li><a href="#requisitos">Requisitos</a></li>
+      <li><a href="#icloud">Sincronización con iCloud</a></li>
+      <li><a href="#estados">Qué significa cada estado de «Copia en iCloud»</a></li>
+      <li><a href="#otra-cuenta">«Progreso de otra cuenta de iCloud»</a></li>
+      <li><a href="#borrar">Borrar tus datos</a></li>
+      <li><a href="#exportar">Exportar e importar tu progreso</a></li>
+      <li><a href="#otras">Otras preguntas</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <h2 id="requisitos">Requisitos</h2>
+  <h3>¿En qué dispositivos funciona?</h3>
+  <ul>
+    <li>iPhone con iOS 16.2 o posterior.</li>
+    <li>iPad con iPadOS 16.2 o posterior.</li>
+    <li>Mac con chip de Apple (M1 o posterior) y macOS Ventura 13.1 o posterior. En el Mac se instala desde la Mac App Store como app diseñada para iPad. Los Mac con procesador Intel no son compatibles.</li>
+  </ul>
+  <h3>¿Necesito una cuenta o conexión a internet?</h3>
+  <p>No hace falta crear ninguna cuenta. Todo el contenido de las lecciones va dentro de la app, así que puedes usarla sin conexión. La conexión solo se necesita para sincronizar con iCloud y para abrir los enlaces externos de las fuentes.</p>
+  <p>Para llevar tu progreso a otros dispositivos necesitas haber iniciado sesión en iCloud con el mismo Apple ID en todos ellos y tener iCloud Drive activado. Es opcional: sin iCloud la app funciona igual, pero el progreso se queda en ese dispositivo.</p>
+
+  <h2 id="icloud">Sincronización con iCloud</h2>
+  <h3>¿Cómo funciona?</h3>
+  <ul>
+    <li>Cada cambio se guarda al momento en el dispositivo. Poco después, o al salir de la app, se sube una copia a tu iCloud.</li>
+    <li>Cada dispositivo escribe su propio archivo y lee los de los demás. Las copias no compiten, se combinan: las lecciones, las recompensas, los repasos y la actividad se unen, y cada preferencia toma su último cambio. Una copia antigua nunca borra progreso.</li>
+    <li>El XP no se duplica: cada recompensa tiene una clave única.</li>
+    <li>Cuando llegan de otro dispositivo lecciones completadas o recompensas nuevas, verás el aviso «Progreso actualizado desde iCloud». No hace falta reiniciar la app.</li>
+    <li>Es iCloud quien decide cuándo entrega los cambios a cada dispositivo, así que a veces tardan un poco en llegar.</li>
+  </ul>
+  <p>Los archivos se guardan en el contenedor privado de ÁGORA en tu iCloud. No aparecen en la app Archivos y el desarrollador no tiene acceso a ellos. Más detalles en la <a href="https://nathsvelro.github.io/agora/privacidad.html">política de privacidad</a>.</p>
+
+  <h3>Tengo un dispositivo nuevo: ¿cómo recupero mi progreso?</h3>
+  <p>Inicia sesión en iCloud con el mismo Apple ID, activa iCloud Drive e instala ÁGORA. Al abrirla, la app muestra «Cargando tu progreso…» y espera unos segundos a iCloud. Si tu progreso tarda más en llegar, puede que veas la bienvenida: puedes completarla, porque no cambia los ajustes que ya tenías, y tu progreso se combina en cuanto llega. Lo que hagas mientras tanto también se conserva.</p>
+
+  <h3>Mi progreso no aparece en otro dispositivo</h3>
+  <ul>
+    <li>Comprueba que los dos dispositivos usan el mismo Apple ID y tienen iCloud Drive activado.</li>
+    <li>Abre ÁGORA en el dispositivo donde hiciste el progreso, con conexión, para que suba los cambios, y espera un poco.</li>
+    <li>Mira el estado de «Copia en iCloud» en <strong>Perfil → Tus datos</strong> en los dos dispositivos (lo explicamos a continuación).</li>
+  </ul>
+
+  <h2 id="estados">Qué significa cada estado de «Copia en iCloud»</h2>
+  <p>En <strong>Perfil → Tus datos</strong>, la línea «Copia en iCloud» indica el estado de la copia en ese dispositivo:</p>
+  <dl class="states">
+    <dt>«Activa: tu progreso se guarda en este dispositivo y en tu iCloud, y se combina con el de tus otros iPhone, iPad o Mac con el mismo Apple ID.»</dt>
+    <dd>Todo funciona. No tienes que hacer nada.</dd>
+
+    <dt>«Sincronizando con iCloud…»</dt>
+    <dd>La app está esperando a iCloud: al abrirla, después de un cambio de Apple ID, mientras se descargan los archivos de tus dispositivos o mientras se sube el de este. Si dura mucho, comprueba la conexión. Mientras tanto, tu progreso sigue guardado en el dispositivo.</dd>
+
+    <dt>«No disponible: inicia sesión en iCloud (y activa iCloud Drive) en Ajustes. Mientras tanto el progreso se guarda solo en este dispositivo.»</dt>
+    <dd>La app no tiene acceso a iCloud. Inicia sesión en Ajustes (en el Mac, en Ajustes del Sistema) y activa iCloud Drive. Si es la primera cuenta de iCloud que usa ÁGORA en este dispositivo, o la misma que usabas antes, lo que hayas hecho se subirá a tu iCloud. Si es un Apple ID distinto del que usabas, la app lo apartará (ver <a href="#otra-cuenta">«Progreso de otra cuenta de iCloud»</a>).</dd>
+
+    <dt>«No se pudo subir a iCloud (…). Tu progreso sigue guardado en este dispositivo y se volverá a intentar.»</dt>
+    <dd>Entre paréntesis aparece el motivo que indica el sistema. Tu progreso no se ha perdido y la subida se reintenta. Si el aviso se repite, comprueba la conexión y que te quede espacio en tu almacenamiento de iCloud.</dd>
+  </dl>
+  <p>Junto al estado puede aparecer «Última copia confirmada en iCloud:», con la fecha y la hora de la última copia que la app subió durante esta sesión. Aparece cuando iCloud confirma que esa copia ya está subida.</p>
+  <h3>No veo la línea «Copia en iCloud», sino otro aviso</h3>
+  <p>Si en <strong>Tus datos</strong> aparece «El almacenamiento de la app no respondió en esta sesión: de momento el progreso se guarda solo aquí y se recuperará la próxima vez que abras la app.», la app no pudo usar su almacenamiento en esta sesión. Cierra la app por completo y vuelve a abrirla: lo que hayas hecho mientras tanto se recupera.</p>
+
+  <h2 id="otra-cuenta">«Progreso de otra cuenta de iCloud»</h2>
+  <p>Este panel aparece en <strong>Perfil → Tus datos</strong> cuando la app detecta que cambió la cuenta de iCloud del dispositivo y había progreso en él: porque cambiaste de Apple ID o porque restauraste una copia de seguridad del dispositivo hecha con otro. Para no mezclar cuentas, la app aparta en el dispositivo el progreso que tenía y no lo sube a la cuenta actual.</p>
+  <p>Ese progreso apartado puede incluir el de la cuenta anterior, lo que hiciste sin sesión de iCloud (que solo está en este dispositivo) y también progreso de la cuenta actual: lo que hiciste con ella antes de que la app detectara el cambio, el de una copia de seguridad suya o, si ya la usaste en este dispositivo, lo que no se llegó a subir. Mientras no elijas una opción, se conserva en el dispositivo.</p>
+  <ul>
+    <li><strong>«Añadirlo a esta cuenta»</strong> añade todo ese progreso (lecciones, XP, repasos…) a la cuenta actual, sin sus ajustes ni sus señales de interés. Después no se puede separar. Elígelo si ese progreso es tuyo.</li>
+    <li><strong>«Descartarlo»</strong> pide confirmación («Sí, descartarlo») y lo borra de este dispositivo. No se puede deshacer. Lo que ya se había subido sigue en el iCloud de su cuenta; lo que no llegó a subirse se pierde. Elígelo, por ejemplo, si ese progreso es de otra persona.</li>
+  </ul>
+
+  <h2 id="borrar">Borrar tus datos</h2>
+  <h3>¿Cómo borro todo mi progreso?</h3>
+  <ol>
+    <li>Abre <strong>Perfil</strong> y baja hasta <strong>Tus datos</strong>.</li>
+    <li>Toca «Borrar todos los datos (también en iCloud y en tus otros dispositivos)».</li>
+    <li>Lee el aviso y toca «Sí, borrar».</li>
+  </ol>
+  <p>Se borra tu progreso en este dispositivo (también el apartado de otra cuenta) y en tu iCloud. Tus otros iPhone, iPad o Mac con el mismo Apple ID reciben el borrado al sincronizarse; lo que hagas después del borrado se conserva. La app vuelve a la bienvenida. No se puede deshacer: si quieres guardar una copia, exporta antes tu progreso.</p>
+  <ul>
+    <li>Hazlo con «Copia en iCloud» en «Activa». Si no lo está (por ejemplo, sin sesión de iCloud), se borra lo del dispositivo y el borrado llega a tus otros dispositivos cuando la app vuelve a sincronizar con el mismo Apple ID; los archivos que esos dispositivos tenían en iCloud se vacían cuando cada uno se sincroniza.</li>
+    <li>Después del borrado queda en tu iCloud un archivo sin progreso, con la fecha del borrado: así tus otros dispositivos saben qué tienen que borrar.</li>
+    <li>No se borra lo que haya en el iCloud de otro Apple ID.</li>
+    <li>Las copias de seguridad del dispositivo hechas antes del borrado conservan la copia local que contenían.</li>
+    <li>Si solo eliminas la app, no se borra la copia de iCloud (y en el Mac pueden quedar también los datos del dispositivo). Si vuelves a instalarla con el mismo Apple ID, recupera lo que se había subido a iCloud.</li>
+    <li>En la versión web, el botón es «Borrar todos los datos locales» y borra lo guardado en ese navegador.</li>
+  </ul>
+  <h3>Quiero empezar de nuevo, pero sin perder mi progreso</h3>
+  <p>Usa «Reiniciar preferencias», en <strong>Tus datos</strong>. Restablece tus intereses, ajustes y señales de interés, te lleva a la bienvenida y conserva lecciones, XP y repasos.</p>
+
+  <h2 id="exportar">Exportar e importar tu progreso</h2>
+  <h3>¿Cómo hago una copia de mi progreso?</h3>
+  <p>En <strong>Perfil → Tus datos</strong>, toca «Exportar progreso (JSON)». En la app aparece el texto con tu progreso: toca «Copiar JSON» y guárdalo, por ejemplo, en Notas o en Archivos. En el navegador, además, se descarga un archivo <code>agora-progreso-AAAA-MM-DD.json</code> si el navegador lo permite.</p>
+  <p>La copia contiene tu progreso y tus preferencias. No hace falta para sincronizar con iCloud: sirve para guardar una copia propia o para llevar tu progreso entre la versión web y la app.</p>
+  <h3>¿Cómo la importo?</h3>
+  <p>En <strong>Perfil → Tus datos</strong>, toca «Importar progreso» y elige el archivo, o abre «Importar pegando el JSON», pega el texto y toca «Importar texto pegado». También puedes hacerlo desde la bienvenida, con «¿Tienes una copia de tu progreso? Importar JSON».</p>
+  <ul>
+    <li>La app comprueba que sea una exportación de ÁGORA, con una estructura válida y un formato compatible: no acepta archivos con un formato de datos más reciente que el que admite tu versión de la app.</li>
+    <li>Si una lección cambió de versión o ya no está en el catálogo, se conserva su historial. Al importar desde el Perfil, la app te lo indica.</li>
+    <li>Importar sustituye el progreso de este dispositivo por el de la copia. Con iCloud activo, después se combina con el de tus otros dispositivos, así que importar no quita el progreso que ya esté en ellos. Para empezar de cero, usa «Borrar todos los datos».</li>
+  </ul>
+
+  <h2 id="otras">Otras preguntas</h2>
+  <h3>¿Por qué veo «Cargando tu progreso…» al abrir la app?</h3>
+  <p>La app lee tu progreso del dispositivo y espera unos segundos a iCloud antes de mostrarlo. Si iCloud tarda más, abre con lo que hay en el dispositivo y combina lo de iCloud cuando llega.</p>
+  <h3>¿La app envía notificaciones?</h3>
+  <p>No. Tampoco hay rachas que se rompan: el ritmo semanal es opcional y cada semana empieza de nuevo.</p>
+  <h3>¿Se guardan mis reflexiones escritas?</h3>
+  <p>No. El texto que escribes en una reflexión no se guarda ni se envía: la rúbrica es solo para ti.</p>
+  <h3>¿El desarrollador puede ver mi progreso?</h3>
+  <p>No, salvo que tú se lo envíes. La app no tiene servidores ni analítica, y el desarrollador no tiene acceso a tu iCloud. Lo explica la <a href="https://nathsvelro.github.io/agora/privacidad.html">política de privacidad</a>.</p>
+
+  <h2 id="contacto">Contacto</h2>
+  <p>Escribe a <a href="mailto:atancaiser@gmail.com">atancaiser@gmail.com</a>. Para ayudarte mejor, cuéntanos:</p>
+  <ul>
+    <li>el dispositivo y la versión de iOS, iPadOS o macOS;</li>
+    <li>si el problema es de sincronización, qué muestra «Copia en iCloud» en <strong>Perfil → Tus datos</strong>;</li>
+    <li>qué hiciste y qué esperabas que pasara.</li>
+  </ul>
+  <p>No hace falta que envíes tu progreso exportado.</p>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>ÁGORA · Nathaniel Velazquez</p>
+    <p><a href="https://nathsvelro.github.io/agora/privacidad.html">Política de privacidad</a> · Actualizado el 2 de noviembre de 2026.</p>
+  </div>
+</footer>
+</body>
+</html>
